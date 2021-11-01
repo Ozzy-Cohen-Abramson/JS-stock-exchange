@@ -19,7 +19,7 @@ class Marquee {
     marqueeCompany.innerHTML = `<span class="company-symbol">${first.symbol}</span>: <span class="positive">${first.price}$</span>`;
     marqueeCompany.addEventListener("click", (e) => {
       this.profileUrl = new URL(
-        `http://127.0.0.1:5500/company.html?symbol=${e.target.innerHTML}`
+        `https://ozzy-cohen-abramson.github.io/JS-stock-exchange/company.html?symbol=${e.target.innerHTML}`
       );
       window.open(this.profileUrl.href);
     });
