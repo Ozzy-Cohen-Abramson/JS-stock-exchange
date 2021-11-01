@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      integrity="undefined"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="shortcut icon" href="./img/arrows-alt-h-solid.svg" />
+    <title>Exchange Website</title>
+  </head>
+  <body>
+    <div class="stock-marquee-container">
+      <div class="stock-marquee"></div>
+    </div>
+    <div class="container page-wrapper">
+      <div id="header"></div>
+      <div id="form"></div>
+      <div id="results"></div>
+    </div>
+    <script src="./js/marquee.js"></script>
+    <script src="./js/searchForm.js"></script>
+    <script src="./js/searchResult.js"></script>
+    <script>
+      (async function () {
+        const head = new Head(document.getElementById("header"));
+        const marquee1 = new Marquee(
+          document.getElementById("stock-marque-container")
+        );
+        marquee1.fetchFromServer();
+        const form = new Input(document.getElementById("form"));
+        const results = new CompanyList(document.getElementById("results"));
+        form.onSearch((comapnies) => {
+          results.renderResults(comapnies);
+        });
+      })();
+    </script>
+  </body>
+</html>

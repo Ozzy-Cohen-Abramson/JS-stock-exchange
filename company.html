@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      integrity="undefined"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="shortcut icon" href="./img/building-regular.svg" />
+    <title>Company profile</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="company-card">
+        <div class="header">
+          <img id="company-profile-img" src="" alt="img" />
+          <h1 id="company-name" class="display-1"></h1>
+        </div>
+        <div class="body">
+          <div id="company-link"></div>
+          <div id="stock-container">
+            <h5 id="stock-price"></h5>
+            <h5 id="changes"></h5>
+          </div>
+          <div id="company-description"></div>
+          <div id="chart-wrapper">
+            <div class="chart-spinner-wrapper">
+              <div
+                id="loading-ind"
+                class="spinner-grow text-danger"
+                style="width: 5rem; height: 5rem"
+                role="status"
+              >
+                <span class="visually-hidden">Loading...</span>
+              </div>
+            </div>
+            <canvas id="myChart"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.js"></script>
+    <script src="./js/company.js"></script>
+  </body>
+</html>
