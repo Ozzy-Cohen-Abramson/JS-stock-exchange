@@ -80,7 +80,7 @@ class CompanyList {
 
             li.addEventListener("click", () => {
               let compUrl = new URL(
-                `http://127.0.0.1:5500/company.html?symbol=${element.symbol}`
+                `https://ozzy-cohen-abramson.github.io/JS-stock-exchange/company.html?symbol=${element.symbol}`
               );
               let urlParams = new URLSearchParams(compUrl.search);
 
