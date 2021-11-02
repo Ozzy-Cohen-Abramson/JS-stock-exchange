@@ -266,9 +266,9 @@ mark {
   }
   .list-group-item {
     display: flex;
-    flex-direction: rpw;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
+    padding-left: 25vw;
     /* margin-bottom: 30px; */
     border-radius: 0.25rem;
     width: 50vw;
