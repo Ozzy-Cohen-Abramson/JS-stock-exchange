@@ -27,6 +27,9 @@ h1 {
   background-color: #463331c0;
   overflow: hidden;
   color: #c5c5c5;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 
 .stock-marquee {
