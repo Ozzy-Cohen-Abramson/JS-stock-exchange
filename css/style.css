@@ -140,7 +140,7 @@ mark {
 .header {
   display: flex;
   align-items: center;
-  margin: 0 0 40px 20%;
+  justify-content: center;
 }
 
 .body {
@@ -226,6 +226,7 @@ mark {
 @media only screen and (max-width: 730px) {
   .container {
     overflow-x: hidden;
+    margin-top: 0;
   }
 
   .search-input {
