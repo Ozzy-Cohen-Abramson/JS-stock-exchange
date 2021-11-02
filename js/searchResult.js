@@ -37,6 +37,11 @@ class CompanyList {
     async function getDataServer(url) {
       const response = await fetch(url);
       let data = await response.json();
+      if (!data.length) {
+        return alert(
+          "Sorry, we didn't find any stocks :( \nTry to search for different stocks"
+        );
+      }
       return data;
     }
 
