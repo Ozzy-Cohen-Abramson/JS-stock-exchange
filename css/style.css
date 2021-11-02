@@ -15,7 +15,7 @@ h1 {
 }
 
 .container {
-  width: 1000vw;
+  width: 100vw;
   margin-top: 40px;
   display: flex;
   flex-direction: column;
@@ -31,7 +31,7 @@ h1 {
 
 .stock-marquee {
   height: 32px;
-  width: 300vw;
+  width: 100vw;
   padding: 3px 0;
   position: relative;
   animation: scrolling 120s linear infinite;
@@ -130,11 +130,11 @@ mark {
 
 .company-card {
   background-color: rgb(255, 255, 255);
-  padding: 30px 40px 50px;
-  margin-bottom: 50px;
-  border-radius: 5px;
+  padding: 30 px 40 px 50 px;
+  margin-bottom: 50 px;
+  border-radius: 5 px;
   box-shadow: 0px 0px 20px 0px #c5c5c5;
-  max-width: 900px;
+  width: 80 vw;
 }
 
 .header {
@@ -216,5 +216,71 @@ mark {
   }
   100% {
     left: -100%;
+  }
+}
+
+@media only screen and (max-width: 730px) {
+  .container {
+    overflow-x: hidden;
+  }
+
+  .search-input {
+    width: 80vw;
+    margin-bottom: 15px;
+  }
+
+  .stock-marquee {
+    height: 32px;
+    width: 300vw;
+    padding: 3px 0;
+    position: relative;
+    animation: scrolling 30s linear infinite;
+  }
+
+  .results {
+    width: 50vw;
+  }
+
+  .list-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    border-radius: 0.25rem;
+    width: 70vw;
+  }
+  .list-group-item {
+    display: flex;
+    flex-direction: rpw;
+    justify-content: center;
+    align-items: center;
+    /* margin-bottom: 30px; */
+    border-radius: 0.25rem;
+    width: 50vw;
+    font-size: 12px;
+  }
+
+  .company-card {
+    font-size: 12px;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 0 40px;
+  }
+
+  #company-profile-img {
+    width: 25vw;
+  }
+
+  #company-description {
+    font-size: 14px;
+  }
+
+  canvas {
+    width: 120%;
   }
 }
