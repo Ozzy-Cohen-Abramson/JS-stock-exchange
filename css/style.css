@@ -142,7 +142,7 @@ mark {
   align-items: center;
   justify-content: center;
 }
-.search-header {
+#search-header {
   display: flex;
   align-items: center;
   justify-content: center;
