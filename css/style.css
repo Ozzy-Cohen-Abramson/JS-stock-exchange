@@ -27,8 +27,8 @@ h1 {
   background-color: #463331c0;
   overflow: hidden;
   color: #c5c5c5;
-  position: -webkit-sticky;
-  position: sticky;
+  /* position: -webkit-sticky;
+  position: sticky; */
   top: 0;
 }
 
@@ -249,10 +249,15 @@ mark {
     padding: 3px 0;
     position: relative;
     animation: scrolling 30s linear infinite;
+    z-index: 10;
   }
 
   .results {
     width: 50vw;
+  }
+
+  .results-wrapper {
+    z-index: 1;
   }
 
   .list-group {
